@@ -10,7 +10,7 @@
     "dev:11ty": "npx @11ty/eleventy --serve",
     "dev:css": "tailwindcss -i src/style.css -o docs/style.css --watch --postcss",
     "build:11ty": "npx @11ty/eleventy",
-    "build:css": "tailwindcss -i src/style.css -o docs/style.css--postcss"
+    "build:css": "tailwindcss -i src/style.css -o docs/style.css --postcss"
   },
   "keywords": [],
   "author": "",
