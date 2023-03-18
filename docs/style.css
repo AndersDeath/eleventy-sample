@@ -517,6 +517,14 @@ video {
   margin-bottom: 1rem;
 }
 
+.w-4\/5 {
+  width: 80%;
+}
+
+.place-content-center {
+  place-content: center;
+}
+
 .bg-gray-300 {
   --tw-bg-opacity: 1;
   background-color: rgb(209 213 219 / var(--tw-bg-opacity));
