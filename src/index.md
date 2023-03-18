@@ -1,5 +1,5 @@
 ---
-title: Hello World
+title: Holy Theory
 layout: 'base.njk'
 ---
  
