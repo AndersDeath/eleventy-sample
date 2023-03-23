@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body class="bg-gray-300">
+   
+      <header class="bg-sky-700	">
+        <h1 class="mb-4 p-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 dark:text-white"></h1>
+      </header>
+      <main  class="flex flex-col center-start m-auto justify-center w-4/5 place-content-center">
+          <h1>Pairwise</h1>
+<pre><code>export function pairwise(arr:number[], arg:number) {
+    const index = [];
+
+    for (let a in arr) {
+        let temp = arr[a];
+
+        for (let i = 1; i &lt; arr.length; i++) {
+            let temp2 = arr[i];
+            if (temp + temp2 === arg &amp;&amp; i &gt; +a &amp;&amp; index.indexOf(+a) === -1 &amp;&amp; index.indexOf(+i) === -1) {
+                index.push(+a, +i);
+                break;
+            }
+        }
+    }
+    if (index.length &gt;= 1) {
+        const addAll = (a: any, b: any) =&gt; {
+            return a + b;
+        };
+
+        return index.reduce(addAll);
+    } else
+        return 0;
+}
+
+let res = pairwise([1, 3, 2, 4], 4);
+console.log(res);
+
+</code></pre>
+<ul>
+<li><a href="../readme.md">Go back</a></li>
+</ul>
+
+      </main>
+    </div>
+  </body>
+</html>

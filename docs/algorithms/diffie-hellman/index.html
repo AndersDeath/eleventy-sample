@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body class="bg-gray-300">
+   
+      <header class="bg-sky-700	">
+        <h1 class="mb-4 p-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 dark:text-white"></h1>
+      </header>
+      <main  class="flex flex-col center-start m-auto justify-center w-4/5 place-content-center">
+          <h1>Diffie hellman algorithm</h1>
+<pre><code>function power(a: any, b: any, p: any) {
+    if(b === 1) {
+        return 1
+    } else {
+        return Math.pow(a,b) % p
+    }
+}
+
+
+function DiffieHellman() {
+
+    let P, G, x, a, y, b, ka, kb;
+
+    P = 23
+
+    console.log(&quot;The value of P :&quot;, P);
+
+    G = 9;
+
+    console.log(&quot;The value of G :&quot;, G);
+
+    a = 4;
+
+    console.log(&quot;The private key a for Alice : &quot;, a);
+
+    x = power(G,a,P);
+
+    b = 3;
+
+    console.log(&quot;The private key a for Bob : &quot;, b);
+
+    y = power(G,b,P);
+
+
+    ka = power(y, a, P);
+    kb = power(x, b, P);
+
+    console.log(&quot;Secret key for the Alice is : &quot;, ka);
+    console.log(&quot;Secret key for the Bob is : &quot;, kb);
+}
+
+
+DiffieHellman()
+</code></pre>
+<ul>
+<li><a href="../readme.md">Go back</a></li>
+</ul>
+
+      </main>
+    </div>
+  </body>
+</html>

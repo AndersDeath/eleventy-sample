@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body class="bg-gray-300">
+   
+      <header class="bg-sky-700	">
+        <h1 class="mb-4 p-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 dark:text-white"></h1>
+      </header>
+      <main  class="flex flex-col center-start m-auto justify-center w-4/5 place-content-center">
+          <h1>Symmetric difference</h1>
+<pre class="language-typescript"><code class="language-typescript"><span class="token keyword">export</span> <span class="token keyword">const</span> <span class="token function-variable function">symmetricDifference</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token operator">...</span>args<span class="token operator">:</span> <span class="token builtin">any</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">[</span><span class="token operator">...</span><span class="token keyword">new</span> <span class="token class-name">Set</span><span class="token punctuation">(</span>args<span class="token punctuation">.</span><span class="token function">reduce</span><span class="token punctuation">(</span><span class="token punctuation">(</span>arr1<span class="token operator">:</span> <span class="token builtin">any</span><span class="token punctuation">,</span> arr2<span class="token operator">:</span> <span class="token builtin">any</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">[</span><br>  <span class="token operator">...</span>arr1<span class="token punctuation">.</span><span class="token function">filter</span><span class="token punctuation">(</span><span class="token punctuation">(</span>e<span class="token operator">:</span> <span class="token builtin">any</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token operator">!</span>arr2<span class="token punctuation">.</span><span class="token function">includes</span><span class="token punctuation">(</span>e<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span><br>  <span class="token operator">...</span>arr2<span class="token punctuation">.</span><span class="token function">filter</span><span class="token punctuation">(</span><span class="token punctuation">(</span>e<span class="token operator">:</span> <span class="token builtin">any</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token operator">!</span>arr1<span class="token punctuation">.</span><span class="token function">includes</span><span class="token punctuation">(</span>e<span class="token punctuation">)</span><span class="token punctuation">)</span><br><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">;</span></code></pre>
+<ul>
+<li><a href="../readme.md">Go back</a></li>
+</ul>
+
+      </main>
+    </div>
+  </body>
+</html>

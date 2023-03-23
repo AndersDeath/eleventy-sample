@@ -3,17 +3,17 @@ title: Holy Theory
 layout: 'base.njk'
 ---
  
-Hello Everyone!
+<!-- Hello Everyone! -->
 
-{% for post in collections.posts %}
+<!-- {% for post in collections.posts %}
 - [{{ post.data.title }}](.{{ post.url  }})
 {% endfor %}
 
 {% for post in collections.system-design %}
 - [{{ post.data.title }}](.{{ post.url  }})
-{% endfor %}
+{% endfor %} -->
 
 
-{% for post in collections.posts %}
-{{ post.content }}
+{% for algorithm in collections.algorithms %}
+{{ algorithm.content }}
 {% endfor %}

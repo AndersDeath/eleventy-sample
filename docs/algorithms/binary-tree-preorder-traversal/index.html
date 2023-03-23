@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body class="bg-gray-300">
+   
+      <header class="bg-sky-700	">
+        <h1 class="mb-4 p-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 dark:text-white"></h1>
+      </header>
+      <main  class="flex flex-col center-start m-auto justify-center w-4/5 place-content-center">
+          <h1>Binary tree preorder traversal</h1>
+<pre class="language-java"><code class="language-java"><span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span><br>	<br>	<span class="token keyword">void</span> <span class="token function">utility</span><span class="token punctuation">(</span><span class="token class-name">Node</span> root<span class="token punctuation">,</span> <span class="token class-name">List</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">Integer</span><span class="token punctuation">></span></span> traversal<span class="token punctuation">)</span> <span class="token punctuation">{</span><br>		<span class="token keyword">if</span><span class="token punctuation">(</span>root <span class="token operator">==</span> <span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br>			<span class="token keyword">return</span><span class="token punctuation">;</span><br>		<span class="token punctuation">}</span><br>		<br>		traversal<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>root<span class="token punctuation">.</span>data<span class="token punctuation">)</span><span class="token punctuation">;</span><br>		<span class="token function">utility</span><span class="token punctuation">(</span>root<span class="token punctuation">.</span>left<span class="token punctuation">,</span> traversal<span class="token punctuation">)</span><span class="token punctuation">;</span><br>		<span class="token function">utility</span><span class="token punctuation">(</span>root<span class="token punctuation">.</span>right<span class="token punctuation">,</span> traversal<span class="token punctuation">)</span><span class="token punctuation">;</span><br>	<span class="token punctuation">}</span><br>	<br>	<span class="token class-name">List</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">Integer</span><span class="token punctuation">></span></span> <span class="token function">getPreorderTraversal</span><span class="token punctuation">(</span><span class="token class-name">Node</span> root<span class="token punctuation">)</span> <span class="token punctuation">{</span><br>		<span class="token class-name">List</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">Integer</span><span class="token punctuation">></span></span> traversal <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ArrayList</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">Integer</span><span class="token punctuation">></span></span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br>		<span class="token function">utility</span><span class="token punctuation">(</span>root<span class="token punctuation">,</span> traversal<span class="token punctuation">)</span><span class="token punctuation">;</span><br>		<span class="token keyword">return</span> traversal<span class="token punctuation">;</span><br>	<span class="token punctuation">}</span><br><span class="token punctuation">}</span></code></pre>
+<ul>
+<li><a href="../readme.md">Go back</a></li>
+</ul>
+
+      </main>
+    </div>
+  </body>
+</html>
