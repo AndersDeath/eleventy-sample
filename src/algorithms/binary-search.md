@@ -1,6 +1,6 @@
 # Binary search
 
-![Binary search](./images/binary-search.png)
+![Binary search](./images/binary-search.png){.image}
 
 ## Steps:
 
