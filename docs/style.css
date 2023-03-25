@@ -13,6 +13,11 @@ body {
 .header-bg {
   background-color: #27259E;
 }
+
+.header-red {
+  color: #FF0D0D;
+}
+
 .baltazar-font {
   font-family: Baltazar;
 }
