@@ -97,12 +97,12 @@
 <p>b = 3;</p>
 <p>console.log(&quot;The private key a for Bob : &quot;, b);</p>
 <p>y = power(G,b,P);</p>
-<p>ka = power(y, a, P);
+<p>ka = power(y, a, P);<br>
 kb = power(x, b, P);</p>
-<p>console.log(&quot;Secret key for the Alice is : &quot;, ka);
-console.log(&quot;Secret key for the Bob is : &quot;, kb);
+<p>console.log(&quot;Secret key for the Alice is : &quot;, ka);<br>
+console.log(&quot;Secret key for the Bob is : &quot;, kb);<br>
 }</p>
-<p>DiffieHellman()
+<p>DiffieHellman()<br>
 </code></pre></p>
 <ul>
 <li><a href="../readme.md">Go back</a></li>
@@ -139,25 +139,25 @@ console.log(&quot;Secret key for the Bob is : &quot;, kb);
 <h1>Pairwise</h1>
 <pre><code>export function pairwise(arr:number[], arg:number) {
     const index = [];
-<p>for (let a in arr) {
+<p>for (let a in arr) {<br>
 let temp = arr[a];</p>
-<p>for (let i = 1; i &lt; arr.length; i++) {
-let temp2 = arr[i];
-if (temp + temp2 === arg &amp;&amp; i &gt; +a &amp;&amp; index.indexOf(+a) === -1 &amp;&amp; index.indexOf(+i) === -1) {
-index.push(+a, +i);
-break;
-}
-}
-}
-if (index.length &gt;= 1) {
-const addAll = (a: any, b: any) =&gt; {
-return a + b;
+<p>for (let i = 1; i &lt; arr.length; i++) {<br>
+let temp2 = arr[i];<br>
+if (temp + temp2 === arg &amp;&amp; i &gt; +a &amp;&amp; index.indexOf(+a) === -1 &amp;&amp; index.indexOf(+i) === -1) {<br>
+index.push(+a, +i);<br>
+break;<br>
+}<br>
+}<br>
+}<br>
+if (index.length &gt;= 1) {<br>
+const addAll = (a: any, b: any) =&gt; {<br>
+return a + b;<br>
 };</p>
-<p>return index.reduce(addAll);
-} else
-return 0;
+<p>return index.reduce(addAll);<br>
+} else<br>
+return 0;<br>
 }</p>
-<p>let res = pairwise([1, 3, 2, 4], 4);
+<p>let res = pairwise([1, 3, 2, 4], 4);<br>
 console.log(res);</p>
 <p></code></pre></p>
 <ul>

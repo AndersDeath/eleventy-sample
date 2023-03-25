@@ -21,3 +21,8 @@ body {
     @apply text-blue-600 underline;
   }
 }
+
+.image {
+    @apply w-96;
+    @apply h-96;
+}
