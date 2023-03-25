@@ -14,11 +14,11 @@
 * Step 8 - Repeat the same process until we find the search element in the list or until sublist contains only one element.
 * Step 9 - If that element also doesn't match with the search element, then returns -1;
 
-Time Complexity:
-
-Worst case: O(log n)
-Average case: O(log n)
-Best case: O(1)
+| Time Complexity: |
+|----------- |
+| Worst case:  O(log n)
+| Average case: O(log n)
+| Best case: O(1) 
 
 ```typescript
 
