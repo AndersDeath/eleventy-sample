@@ -5,7 +5,17 @@
 body {
     font-family: sans-serif;
 }
+@font-face {
+  font-family: Baltazar;
+  src: url(Balthazar-Regular.ttf);
+}
 
+.header-bg {
+  background-color: #27259E;
+}
+.baltazar-font {
+  font-family: Baltazar;
+}
 
 @layer base {
   h1 {
