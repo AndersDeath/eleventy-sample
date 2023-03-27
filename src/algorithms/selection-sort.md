@@ -32,5 +32,3 @@ console.log(selectionSort([1, 4, 2, 8, 345, 123, 43, 32, 5643, 63, 123, 43, 2, 5
 		}
 	}
 ```
-
-* [Go back](../readme.md)

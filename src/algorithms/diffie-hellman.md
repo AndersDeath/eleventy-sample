@@ -48,5 +48,3 @@ function DiffieHellman() {
 
 DiffieHellman()
 ```
-
-* [Go back](../readme.md)

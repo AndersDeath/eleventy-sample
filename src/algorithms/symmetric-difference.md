@@ -8,5 +8,3 @@ export const symmetricDifference = (...args: any) => [...new Set(args.reduce((ar
   ...arr2.filter((e: any) => !arr1.includes(e))
 ]))];
 ```
-
-* [Go back](../readme.md)

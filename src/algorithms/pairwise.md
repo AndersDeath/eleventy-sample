@@ -2,7 +2,7 @@
 title: Pairwise
 ---
 # Pairwise
-```
+```typescript
 export function pairwise(arr:number[], arg:number) {
     const index = [];
 
@@ -29,7 +29,4 @@ export function pairwise(arr:number[], arg:number) {
 
 let res = pairwise([1, 3, 2, 4], 4);
 console.log(res);
-
 ```
-
-* [Go back](../readme.md)
