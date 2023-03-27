@@ -10,10 +10,14 @@ layout: 'base.njk'
 {% endfor %}
  -->
 {% for post in collections.algorithms %}
-- [{{ post.data.title }}](.{{ post.url  }})
+<!-- - [{{ post.data.title }}](.{{ post.url  }}) -->
+- <a href="#{{post.url}}">{{ post.data.title }}</a>
+
 {% endfor %}
 
 
 {% for algorithm in collections.algorithms %}
 {{ algorithm.content }}
+<a name="{{algorithm.url}}"></a>
+
 {% endfor %}
