@@ -1,3 +1,6 @@
+---
+title: Interpolation search
+---
 # Interpolation search
 
 ```java

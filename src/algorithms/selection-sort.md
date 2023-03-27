@@ -1,4 +1,6 @@
-
+---
+title: Selection sort
+---
 # Selection sort
 ```typescript
 function selectionSort(array: any[]) {

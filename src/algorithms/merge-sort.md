@@ -1,3 +1,6 @@
+---
+title: Merge sort
+---
 # Merge sort
 
 ## Java

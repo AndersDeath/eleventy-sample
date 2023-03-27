@@ -1,3 +1,6 @@
+---
+title: Bubble sort
+---
 # Bubble sort
 
 ```typescript

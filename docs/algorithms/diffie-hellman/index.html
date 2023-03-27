@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Diffie hellman algorithm</title>
     <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
   </head>
@@ -17,50 +17,7 @@
       </header>
       <main  class="flex flex-col center-start m-auto justify-center w-4/5 place-content-center">
           <h1>Diffie hellman algorithm</h1>
-<pre><code>function power(a: any, b: any, p: any) {
-    if(b === 1) {
-        return 1
-    } else {
-        return Math.pow(a,b) % p
-    }
-}
-
-
-function DiffieHellman() {
-
-    let P, G, x, a, y, b, ka, kb;
-
-    P = 23
-
-    console.log(&quot;The value of P :&quot;, P);
-
-    G = 9;
-
-    console.log(&quot;The value of G :&quot;, G);
-
-    a = 4;
-
-    console.log(&quot;The private key a for Alice : &quot;, a);
-
-    x = power(G,a,P);
-
-    b = 3;
-
-    console.log(&quot;The private key a for Bob : &quot;, b);
-
-    y = power(G,b,P);
-
-
-    ka = power(y, a, P);
-    kb = power(x, b, P);
-
-    console.log(&quot;Secret key for the Alice is : &quot;, ka);
-    console.log(&quot;Secret key for the Bob is : &quot;, kb);
-}
-
-
-DiffieHellman()
-</code></pre>
+<pre class="language-typescript"><code class="language-typescript"><span class="token keyword">function</span> <span class="token function">power</span><span class="token punctuation">(</span>a<span class="token operator">:</span> <span class="token builtin">any</span><span class="token punctuation">,</span> b<span class="token operator">:</span> <span class="token builtin">any</span><span class="token punctuation">,</span> p<span class="token operator">:</span> <span class="token builtin">any</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br>    <span class="token keyword">if</span><span class="token punctuation">(</span>b <span class="token operator">===</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br>        <span class="token keyword">return</span> <span class="token number">1</span><br>    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span><br>        <span class="token keyword">return</span> Math<span class="token punctuation">.</span><span class="token function">pow</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span>b<span class="token punctuation">)</span> <span class="token operator">%</span> p<br>    <span class="token punctuation">}</span><br><span class="token punctuation">}</span><br><br><br><span class="token keyword">function</span> <span class="token function">DiffieHellman</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br><br>    <span class="token keyword">let</span> <span class="token constant">P</span><span class="token punctuation">,</span> <span class="token constant">G</span><span class="token punctuation">,</span> x<span class="token punctuation">,</span> a<span class="token punctuation">,</span> y<span class="token punctuation">,</span> b<span class="token punctuation">,</span> ka<span class="token punctuation">,</span> kb<span class="token punctuation">;</span><br><br>    <span class="token constant">P</span> <span class="token operator">=</span> <span class="token number">23</span><br><br>    <span class="token builtin">console</span><span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"The value of P :"</span><span class="token punctuation">,</span> <span class="token constant">P</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br><br>    <span class="token constant">G</span> <span class="token operator">=</span> <span class="token number">9</span><span class="token punctuation">;</span><br><br>    <span class="token builtin">console</span><span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"The value of G :"</span><span class="token punctuation">,</span> <span class="token constant">G</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br><br>    a <span class="token operator">=</span> <span class="token number">4</span><span class="token punctuation">;</span><br><br>    <span class="token builtin">console</span><span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"The private key a for Alice : "</span><span class="token punctuation">,</span> a<span class="token punctuation">)</span><span class="token punctuation">;</span><br><br>    x <span class="token operator">=</span> <span class="token function">power</span><span class="token punctuation">(</span><span class="token constant">G</span><span class="token punctuation">,</span>a<span class="token punctuation">,</span><span class="token constant">P</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br><br>    b <span class="token operator">=</span> <span class="token number">3</span><span class="token punctuation">;</span><br><br>    <span class="token builtin">console</span><span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"The private key a for Bob : "</span><span class="token punctuation">,</span> b<span class="token punctuation">)</span><span class="token punctuation">;</span><br><br>    y <span class="token operator">=</span> <span class="token function">power</span><span class="token punctuation">(</span><span class="token constant">G</span><span class="token punctuation">,</span>b<span class="token punctuation">,</span><span class="token constant">P</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br><br><br>    ka <span class="token operator">=</span> <span class="token function">power</span><span class="token punctuation">(</span>y<span class="token punctuation">,</span> a<span class="token punctuation">,</span> <span class="token constant">P</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br>    kb <span class="token operator">=</span> <span class="token function">power</span><span class="token punctuation">(</span>x<span class="token punctuation">,</span> b<span class="token punctuation">,</span> <span class="token constant">P</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br><br>    <span class="token builtin">console</span><span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"Secret key for the Alice is : "</span><span class="token punctuation">,</span> ka<span class="token punctuation">)</span><span class="token punctuation">;</span><br>    <span class="token builtin">console</span><span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"Secret key for the Bob is : "</span><span class="token punctuation">,</span> kb<span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><br><br><span class="token function">DiffieHellman</span><span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre>
 <ul>
 <li><a href="../readme.md">Go back</a></li>
 </ul>

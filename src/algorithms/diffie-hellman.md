@@ -1,6 +1,9 @@
+---
+title: Diffie hellman algorithm
+---
 # Diffie hellman algorithm
 
-```
+```typescript
 function power(a: any, b: any, p: any) {
     if(b === 1) {
         return 1

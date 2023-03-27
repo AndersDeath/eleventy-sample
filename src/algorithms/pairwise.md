@@ -1,4 +1,6 @@
-
+---
+title: Pairwise
+---
 # Pairwise
 ```
 export function pairwise(arr:number[], arg:number) {

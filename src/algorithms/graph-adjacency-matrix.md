@@ -1,3 +1,6 @@
+---
+title: Graph adjacency matrix
+---
 # Graph adjacency matrix
 
 ```java

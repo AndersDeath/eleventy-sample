@@ -1,3 +1,7 @@
+---
+title: Binary search
+---
+
 # Binary search
 
 ![Binary search](./images/binary-search.png){.image}

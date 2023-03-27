@@ -1,3 +1,6 @@
+---
+title: Insertion sort
+---
 # Insertion sort
 
 

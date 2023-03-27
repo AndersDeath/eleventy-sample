@@ -8,10 +8,10 @@ layout: 'base.njk'
 <!-- {% for post in collections.posts %}
 - [{{ post.data.title }}](.{{ post.url  }})
 {% endfor %}
-
-{% for post in collections.system-design %}
+ -->
+{% for post in collections.algorithms %}
 - [{{ post.data.title }}](.{{ post.url  }})
-{% endfor %} -->
+{% endfor %}
 
 
 {% for algorithm in collections.algorithms %}
