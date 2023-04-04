@@ -1,5 +1,6 @@
 ---
 title: Binary search
+tags: ['search', algorithm]
 ---
 
 # Binary search
