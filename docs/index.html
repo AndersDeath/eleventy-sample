@@ -79,6 +79,38 @@
 <ul>
 <li><a href="#/algorithms/symmetric-difference/">Symmetric difference</a></li>
 </ul>
+<!-- - [Array length property](./javascript/array-length-property/) -->
+<ul>
+<li><a href="#/javascript/array-length-property/">Array length property</a></li>
+</ul>
+<!-- - [Different ways of declaring functions in JS](./javascript/different-ways-of-declaring-a-function-in-js/) -->
+<ul>
+<li><a href="#/javascript/different-ways-of-declaring-a-function-in-js/">Different ways of declaring functions in JS</a></li>
+</ul>
+<!-- - [Event Loop](./javascript/event-loop/) -->
+<ul>
+<li><a href="#/javascript/event-loop/">Event Loop</a></li>
+</ul>
+<!-- - [JavaScript data types](./javascript/javascript-data-types/) -->
+<ul>
+<li><a href="#/javascript/javascript-data-types/">JavaScript data types</a></li>
+</ul>
+<!-- - [JavaScript number size summary](./javascript/javascript-number-size-summary/) -->
+<ul>
+<li><a href="#/javascript/javascript-number-size-summary/">JavaScript number size summary</a></li>
+</ul>
+<!-- - [JavaScript Arrays cheat sheet](./javascript/js-arrays-cheat-sheet/) -->
+<ul>
+<li><a href="#/javascript/js-arrays-cheat-sheet/">JavaScript Arrays cheat sheet</a></li>
+</ul>
+<!-- - [Possible types of function in JavaScript](./javascript/possible-types-of-functions-in-js/) -->
+<ul>
+<li><a href="#/javascript/possible-types-of-functions-in-js/">Possible types of function in JavaScript</a></li>
+</ul>
+<!-- - [Promise action flow](./javascript/promise-action-flow/) -->
+<ul>
+<li><a href="#/javascript/promise-action-flow/">Promise action flow</a></li>
+</ul>
 <h1>Binary search</h1>
 <p><img src="./images/binary-search.png" alt="Binary search" class="image"></p>
 <h2>Steps:</h2>
@@ -164,6 +196,35 @@
 <h1>Symmetric difference</h1>
 <pre class="language-typescript"><code class="language-typescript"><span class="token keyword">export</span> <span class="token keyword">const</span> <span class="token function-variable function">symmetricDifference</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token operator">...</span>args<span class="token operator">:</span> <span class="token builtin">any</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">[</span><span class="token operator">...</span><span class="token keyword">new</span> <span class="token class-name">Set</span><span class="token punctuation">(</span>args<span class="token punctuation">.</span><span class="token function">reduce</span><span class="token punctuation">(</span><span class="token punctuation">(</span>arr1<span class="token operator">:</span> <span class="token builtin">any</span><span class="token punctuation">,</span> arr2<span class="token operator">:</span> <span class="token builtin">any</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">[</span><br>  <span class="token operator">...</span>arr1<span class="token punctuation">.</span><span class="token function">filter</span><span class="token punctuation">(</span><span class="token punctuation">(</span>e<span class="token operator">:</span> <span class="token builtin">any</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token operator">!</span>arr2<span class="token punctuation">.</span><span class="token function">includes</span><span class="token punctuation">(</span>e<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span><br>  <span class="token operator">...</span>arr2<span class="token punctuation">.</span><span class="token function">filter</span><span class="token punctuation">(</span><span class="token punctuation">(</span>e<span class="token operator">:</span> <span class="token builtin">any</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token operator">!</span>arr1<span class="token punctuation">.</span><span class="token function">includes</span><span class="token punctuation">(</span>e<span class="token punctuation">)</span><span class="token punctuation">)</span><br><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">;</span></code></pre>
 <p><a name="/algorithms/symmetric-difference/"></a></p>
+<h1>Array length property</h1>
+<p>What is the value of clothes[0]:</p>
+<pre class="language-javascript"><code class="language-javascript"><span class="token keyword">const</span> clothes <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'jacket'</span><span class="token punctuation">,</span> <span class="token string">'t-shirt'</span><span class="token punctuation">]</span><span class="token punctuation">;</span><br>    clothes<span class="token punctuation">.</span>length <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span><br>    clothes<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">;</span></code></pre>
+<p>Reducing the value of the length property has the side-effect of deleting own array elements whose array index is between the old and new length values.<br>
+<a href="https://262.ecma-international.org/6.0/#sec-properties-of-array-instances-length">https://262.ecma-international.org/6.0/#sec-properties-of-array-instances-length</a></p>
+<p>As result when JavaScript executes clothes.length = 0, all clothes items are deleted.</p>
+<p>clothes[0] is undefined, because clothes array has been emptied.</p>
+<p><a name="/javascript/array-length-property/"></a></p>
+<h1>Different ways of declaring functions in JS</h1>
+<p><img src="./images/different-ways-of-declaring-a-function-in-js.png" alt="Different ways of declaring functions in JS" class="image"></p>
+<p><a name="/javascript/different-ways-of-declaring-a-function-in-js/"></a></p>
+<h1>Event Loop</h1>
+<p><img src="./images/event-loop.png" alt="Event Loop" class="image"></p>
+<p><a name="/javascript/event-loop/"></a></p>
+<h1>JavaScript data types</h1>
+<p><img src="./images/javascript-data-types.png" alt="JavaScript data types" class="image"></p>
+<p><a name="/javascript/javascript-data-types/"></a></p>
+<h1>JavaScript number size summary</h1>
+<p><img src="./images/javascript-number-size-summary.png" alt="JavaScript number size summary" class="image"></p>
+<p><a name="/javascript/javascript-number-size-summary/"></a></p>
+<h1>JavaScript Arrays cheat sheet</h1>
+<p><img src="./images/js-arrays-cheat-sheet.png" alt="JavaScript Arrays cheat sheet" class="image"></p>
+<p><a name="/javascript/js-arrays-cheat-sheet/"></a></p>
+<h1>Possible types of function in JavaScript</h1>
+<p><img src="./images/possible-types-of-functions-in-js.png" alt="Possible types of function in JavaScript" class="image"></p>
+<p><a name="/javascript/possible-types-of-functions-in-js/"></a></p>
+<h1>Promise action flow</h1>
+<p><img src="./images/promise-action-flow.png" alt="Promise action flow" class="image"></p>
+<p><a name="/javascript/promise-action-flow/"></a></p>
 
       </main>
     </div>
