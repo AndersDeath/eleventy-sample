@@ -9,17 +9,18 @@ layout: 'base.njk'
 - [{{ post.data.title }}](.{{ post.url  }})
 {% endfor %}
  -->
+ <ol type="1">
+
 {% for post in collections.algorithms %}
 <!-- - [{{ post.data.title }}](.{{ post.url  }}) -->
-- <a href="#{{post.url}}">{{ post.data.title }}</a>
+<li><a href="#{{post.url}}">{{ post.data.title }}</a></li>
 
 {% endfor %}
-
 {% for post in collections.javascript %}
 <!-- - [{{ post.data.title }}](.{{ post.url  }}) -->
-- <a href="#{{post.url}}">{{ post.data.title }}</a>
-
+<li><a href="#{{post.url}}">{{ post.data.title }}</a></li>
 {% endfor %}
+</ol>
 
 
 {% for algorithm in collections.algorithms %}
