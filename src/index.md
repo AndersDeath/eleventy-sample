@@ -13,12 +13,12 @@ layout: 'base.njk'
 
 {% for post in collections.algorithms %}
 <!-- - [{{ post.data.title }}](.{{ post.url  }}) -->
-<li><a href="#{{post.url}}">{{ post.data.title }}</a></li>
+<li class="list"><a href="#{{post.url}}">{{ post.data.title }}</a></li>
 
 {% endfor %}
 {% for post in collections.javascript %}
 <!-- - [{{ post.data.title }}](.{{ post.url  }}) -->
-<li><a href="#{{post.url}}">{{ post.data.title }}</a></li>
+<li class="list"><a href="#{{post.url}}">{{ post.data.title }}</a></li>
 {% endfor %}
 </ol>
 

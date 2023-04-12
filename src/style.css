@@ -50,3 +50,7 @@ body {
 .image {
     @apply h-96;
 }
+
+.list {
+  list-style: auto;
+}
